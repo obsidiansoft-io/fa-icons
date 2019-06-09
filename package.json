@@ -1,0 +1,24 @@
+{
+  "name": "fa-icon",
+  "version": "0.1.0",
+  "description": "FontAwsome icon for polymer 3",
+  "main": "fa-icon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuinsZouls/fa-icon.git"
+  },
+  "keywords": [],
+  "author": "quinszouls",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuinsZouls/fa-icon/issues"
+  },
+  "homepage": "https://github.com/QuinsZouls/fa-icon#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "lit-element": "^2.1.0"
+  }
+}
