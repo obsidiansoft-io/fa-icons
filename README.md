@@ -17,3 +17,17 @@ class | class of fontawesome |String /HTMLClass
 <!--only iclass , style, color y size-->
 <fa-icon class="fal fa-envelope" color="#2980B9" size="2em"></fa-icon>
 ```
+### Usage with LitElement (Polymer  element is deprecated)
+```javascript
+import { LitElement, html} from 'lit-element';
+import'fa-icons';
+class SomeClass extends LitElement {
+ render() {
+    return html`
+      <div>
+         <fa-icon class="fal fa-envelope" color="#2980B9" size="2em"></fa-icon>
+      </div>
+    `;
+  }
+}
+customElements.define('custom-component', SomeClass );
