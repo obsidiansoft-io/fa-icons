@@ -9,7 +9,7 @@ style | styles | String/StylesInline
 size | size of icons| CSS Numbers
 class | class of fontawesome |String /HTMLClass
 
-#### Ejemplo
+#### Example
 ```html
 <!--only  iclass y style-->
 <fa-icon class="fal fa-envelope" style="fill: #2980B9;height: 2em;width: 2em;"></fa-icon>
