@@ -53,7 +53,7 @@ customElements.define('custom-component', CualquierClase );
 
 ## Versiones de Node soportadas
 
-Lo hemos probado con el node >= 10. Se dara soporte en la versiones de Node LTS y actuales.
+Lo hemos probado con node >= 10. Se dara soporte en las versiones de Node LTS y actuales.
 
 ## Licencia
 
