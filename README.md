@@ -2,17 +2,17 @@
 
 Optimized FontAwesome icons for polymer-3
 
-#### Propiedades
+## Properties
 
-Property | description | type
+Property | Description | Type
 ------------ | ------------- | -------------
-color | Color of icon | String / color
-src (optional) | Sprite del svg de FontAwesome and another resource | String /URL
-style | styles | String/StylesInline
-size | size of icon| CSS Numbers
-class | class of fontawesome |String /HTMLClass
+`color` | Color of icon | String / color
+`src` (optional) | Sprite del svg de FontAwesome and another resource | String /URL
+`style` | styles | String/StylesInline
+`size` | size of icon| CSS Numbers
+`class` | class of fontawesome |String /HTMLClass
 
-#### Example
+## Example
 
 ```html
 <!--only  iclass y style-->
@@ -22,7 +22,11 @@ class | class of fontawesome |String /HTMLClass
 <fa-icon class="fal fa-envelope" color="#2980B9" size="2em"></fa-icon>
 ```
 
-### Usage with LitElement (Polymer  element is deprecated)
+## Usage with LitElement
+
+<aside class="notice">
+🚨Polymer element is deprecated.
+</aside>
 
 ```javascript
 import { LitElement, html} from 'lit-element';
@@ -38,3 +42,11 @@ class SomeClass extends LitElement {
 }
 customElements.define('custom-component', SomeClass );
 ```
+
+## Supported Node Versions
+
+We have test with node >=10
+
+## License
+
+Unless otherwise noted, the fa-icon source files are distributed under the MIT license found in the LICENSE file.
