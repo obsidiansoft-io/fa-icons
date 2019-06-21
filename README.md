@@ -1,6 +1,9 @@
 # fa-icon
+
 Optimized FontAwesome icons for polymer-3
+
 #### Propiedades
+
 Property | description | type
 ------------ | ------------- | -------------
 color | Color of icon | String / color
@@ -10,6 +13,7 @@ size | size of icon| CSS Numbers
 class | class of fontawesome |String /HTMLClass
 
 #### Example
+
 ```html
 <!--only  iclass y style-->
 <fa-icon class="fal fa-envelope" style="fill: #2980B9;height: 2em;width: 2em;"></fa-icon>
@@ -17,7 +21,9 @@ class | class of fontawesome |String /HTMLClass
 <!--only iclass , style, color y size-->
 <fa-icon class="fal fa-envelope" color="#2980B9" size="2em"></fa-icon>
 ```
+
 ### Usage with LitElement (Polymer  element is deprecated)
+
 ```javascript
 import { LitElement, html} from 'lit-element';
 import'fa-icons';
@@ -31,3 +37,4 @@ class SomeClass extends LitElement {
   }
 }
 customElements.define('custom-component', SomeClass );
+```
