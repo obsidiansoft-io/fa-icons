@@ -16,9 +16,9 @@ Property | Type | Description
 ------------ | ------------- | -------------
 `color` | String | Icon color, must be an hex color
 `src` (optional) | String | SVG Sprite of FontAwesome and other resources, must be a valid URL
-`style` | String | Styles, nust follow the StylesInline standard
+`style` | String | Styles, must follow the StylesInline standard
 `size` | String | Size of icon, in CSS number notation
-`class` | String | FontAwesome class, most follow HTMLClass standard
+`class` | String | FontAwesome class, must follow HTMLClass standard
 
 ## Example
 
