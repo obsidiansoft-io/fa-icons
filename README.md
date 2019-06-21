@@ -32,7 +32,7 @@ Property | Type | Description
 
 ## Usage with LitElement
 
-🚨 No support for Polymer element because it's deprecated.
+🚨 We don't advise the use with Polymer Element because it's deprecated.
 
 ```javascript
 import { LitElement, html} from 'lit-element';
