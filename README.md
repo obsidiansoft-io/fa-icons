@@ -1,6 +1,14 @@
 # fa-icon
 
-Optimized FontAwesome 5 icons for Polymer 3
+An optimized [FontAwesome 5](https://fontawesome.com/) icons for the [Polymer 3](https://www.polymer-project.org/).
+
+[![license](https://camo.githubusercontent.com/11ad3ffb000cd7668567587af947347c738b6472/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f6c2f657870726573732e7376673f7374796c653d666c61742d737175617265266d61784167653d33363030)](http://opensource.org/licenses/MIT)
+
+## Installation
+
+```bash
+npm install fa-icons
+```
 
 ## Properties
 
@@ -45,8 +53,12 @@ customElements.define('custom-component', SomeClass );
 
 ## Supported Node Versions
 
-We have test it with node >= 10.
+We have test it with node >= 10. We will support and build hemera on even Nodejs versions that are current or in maintenance.
 
 ## License
 
 Unless otherwise noted, the fa-icon source files are distributed under the MIT license found in the LICENSE file.
+
+## Sponsorship
+
+Development of the fa-icon is currently sponsored by [ObsidianSoft](https://obsidiansoft.io/) and generously supported by contributions from individuals.
