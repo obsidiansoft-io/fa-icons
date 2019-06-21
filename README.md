@@ -53,7 +53,7 @@ customElements.define('custom-component', SomeClass );
 
 ## Supported Node Versions
 
-We have test it with node >= 10. We will support and build hemera on even Nodejs versions that are current or in maintenance.
+We have test it with node >= 10. We will support on even Nodejs versions that are current or in maintenance.
 
 ## License
 
