@@ -1,36 +1,35 @@
 # fa-icon
 
-Optimized FontAwesome icons for polymer-3
+Optimized FontAwesome 5 icons for Polymer 3
 
 ## Properties
 
-Property | Description | Type
+Property | Type | Description
 ------------ | ------------- | -------------
-`color` | Color of icon | String / color
-`src` (optional) | Sprite del svg de FontAwesome and another resource | String /URL
-`style` | styles | String/StylesInline
-`size` | size of icon| CSS Numbers
-`class` | class of fontawesome |String /HTMLClass
+`color` | String | Icon color, must be an hex color
+`src` (optional) | String | SVG Sprite of FontAwesome and other resources, must be a valid URL
+`style` | String | Styles, nust follow the StylesInline standard
+`size` | String | Size of icon, in CSS number notation
+`class` | String | FontAwesome class, most follow HTMLClass standard
 
 ## Example
 
 ```html
-<!--only  iclass y style-->
+<!--only iclass & style-->
 <fa-icon class="fal fa-envelope" style="fill: #2980B9;height: 2em;width: 2em;"></fa-icon>
 
-<!--only iclass , style, color y size-->
+<!--only iclass, style, color & size-->
 <fa-icon class="fal fa-envelope" color="#2980B9" size="2em"></fa-icon>
 ```
 
 ## Usage with LitElement
 
-<aside class="notice">
-🚨Polymer element is deprecated.
-</aside>
+🚨 No support for Polymer element because it's deprecated.
 
 ```javascript
 import { LitElement, html} from 'lit-element';
-import'fa-icons';
+import 'fa-icons';
+
 class SomeClass extends LitElement {
  render() {
     return html`
@@ -40,12 +39,13 @@ class SomeClass extends LitElement {
     `;
   }
 }
+
 customElements.define('custom-component', SomeClass );
 ```
 
 ## Supported Node Versions
 
-We have test with node >=10
+We have test it with node >= 10.
 
 ## License
 
