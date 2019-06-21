@@ -62,3 +62,9 @@ Unless otherwise noted, the fa-icon source files are distributed under the MIT l
 ## Sponsorship
 
 Development of the fa-icon is currently sponsored by [ObsidianSoft](https://obsidiansoft.io/) and generously supported by contributions from individuals.
+
+## Translations
+
+This readme is available in the following translations:
+
+- [Spanish :es:](translations/README.spanish.md) (:pray: [@obsidiansoft-io](https://github.com/obsidiansoft-io))
