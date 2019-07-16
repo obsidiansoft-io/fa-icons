@@ -1,13 +1,15 @@
 import { LitElement, html, css } from 'lit-element';
 
 class FaIcon extends LitElement {
+
   static get properties() {
     return {
       color: String,
       iClass: { attribute: 'class' },
       src: String,
       style: String,
-      size: Number
+      size: Number,
+      pathPrefix: { attribute: "path-prefix" },
     };
   }
   static get styles() {
@@ -37,9 +39,7 @@ class FaIcon extends LitElement {
       return icon;
     };
     let data = getPrefix(className);
-    return `node_modules/@fortawesome/fontawesome-free/sprites/${data[0]}.svg#${
-      data[1]
-    }`;
+    return `${this.pathPrefix}/@fortawesome/fontawesome-free/sprites/${data[0]}.svg#${data[1]}`;
   }
   constructor() {
     super();
@@ -48,6 +48,7 @@ class FaIcon extends LitElement {
     this.style = '';
     this.size = 19;
     this.color = '#000';
+    this.pathPrefix = "node_modules";
   }
   firstUpdated() {
     this.src = this.getSources(this.iClass);
