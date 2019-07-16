@@ -16,6 +16,7 @@ Propiedad | Tipo | Descripcion
 ------------ | ------------- | -------------
 `color` | String | Color del icono, debe de ser un código hexadecimal valido
 `src` (optional) | String | SVG Sprite de FontAwesome o de otros recursos, debe de ser una URL valida
+`path-prefix` (optional) | String | Prefijo de la ruta para uso universal (Default node_modules) [refer](https://github.com/obsidiansoft-io/fa-icon/pull/2#issue-296521774)
 `style` | String | Styles, debe seguir el estandard de StylesInline
 `size` | String | Tamaño del icon, en CSS con notación numérica
 `class` | String | Clase de FontAwesome, debe de seguir el estandard de HTMLClass
