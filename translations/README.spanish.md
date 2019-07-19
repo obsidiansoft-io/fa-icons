@@ -33,7 +33,7 @@ Propiedad | Tipo | Descripcion
 
 ## Uso con LitElement
 
-🚨 No recomendamos el uso con Polymer Element porque este esta We don't advise the use with Polymer Element because it's obsoleto.
+🚨 No recomendamos el uso con Polymer Element porque este esta obsoleto.
 
 ```javascript
 import { LitElement, html} from 'lit-element';
