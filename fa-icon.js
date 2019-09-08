@@ -8,7 +8,7 @@ class FaIcon extends LitElement {
       iClass: { attribute: 'class' },
       src: String,
       style: String,
-      size: Number,
+      size: String,
       pathPrefix: { attribute: "path-prefix" },
     };
   }
