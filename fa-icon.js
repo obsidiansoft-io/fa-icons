@@ -46,7 +46,7 @@ class FaIcon extends LitElement {
     this.iClass = '';
     this.src = '';
     this.style = '';
-    this.size = 19;
+    this.size = '19';
     this.color = '#000';
     this.pathPrefix = "node_modules";
   }
