@@ -1,7 +1,6 @@
 import { LitElement, html, css } from 'lit-element';
 
 class FaIcon extends LitElement {
-
   static get properties() {
     return {
       color: String,
@@ -9,7 +8,8 @@ class FaIcon extends LitElement {
       src: String,
       style: String,
       size: String,
-      pathPrefix: { attribute: "path-prefix" },
+      className: String,
+      pathPrefix: { attribute: 'path-prefix' }
     };
   }
   static get styles() {
@@ -39,30 +39,32 @@ class FaIcon extends LitElement {
       return icon;
     };
     let data = getPrefix(className);
-    return `${this.pathPrefix}/@fortawesome/fontawesome-free/sprites/${data[0]}.svg#${data[1]}`;
+    return `${this.pathPrefix}/@fortawesome/fontawesome-free/sprites/${
+      data[0]
+    }.svg#${data[1]}`;
   }
   constructor() {
     super();
     this.iClass = '';
     this.src = '';
     this.style = '';
-    this.size = 19;
+    this.size = '19';
     this.color = '#000';
-    this.pathPrefix = "node_modules";
+    this.pathPrefix = 'node_modules';
+    this.className = 'fa-icon';
   }
   firstUpdated() {
     this.src = this.getSources(this.iClass);
   }
   render() {
     return html`
-      <div class="fa-icon">
-        <svg
-          style=" width:${this.size};  height: ${this.size}; fill: ${this
-            .color}; ${this.style}"
-        >
-          <use href="${this.src}"></use>
-        </svg>
-      </div>
+      <svg
+        style=" width:${this.size};  height: ${this.size}; fill: ${this
+          .color}; ${this.style}"
+        class="${this.className}"
+      >
+        <use href="${this.src}"></use>
+      </svg>
     `;
   }
 }
