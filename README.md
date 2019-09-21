@@ -24,10 +24,10 @@ Property | Type | Description
 ## Example
 
 ```html
-<!--only iclass & style-->
+<!--only class & style-->
 <fa-icon class="fal fa-envelope" style="fill: #2980B9;height: 2em;width: 2em;"></fa-icon>
 
-<!--only iclass, style, color & size-->
+<!--only class, style, color & size-->
 <fa-icon class="fal fa-envelope" color="#2980B9" size="2em"></fa-icon>
 ```
 
