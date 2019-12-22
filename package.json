@@ -4,7 +4,8 @@
   "description": "FontAwsome icons for polymer 3",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "polymer serve",
+    "test": "polymer test --npm --module-resolution=node --local chrome"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,12 @@
     "@fortawesome/fontawesome-free": "^5.9.0",
     "lit-element": "^2.1.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.1.0",
+    "@polymer/test-fixture": "^4.0.2",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "wct-mocha": "^1.0.1"
+  }
 }
