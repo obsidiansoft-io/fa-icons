@@ -25,10 +25,10 @@ Property | Type | Description
 
 ```html
 <!--only class & style-->
-<fa-icon class="fal fa-envelope" style="fill: #2980B9;height: 2em;width: 2em;"></fa-icon>
+<fa-icon class="fas fa-address-card" style="fill: #2980B9;height: 2em;width: 2em;"></fa-icon>
 
 <!--only class, style, color & size-->
-<fa-icon class="fal fa-envelope" color="#2980B9" size="2em"></fa-icon>
+<fa-icon class="fas fa-address-card" color="#2980B9" size="2em"></fa-icon>
 ```
 
 ## Usage with LitElement
@@ -43,7 +43,7 @@ class SomeClass extends LitElement {
  render() {
     return html`
       <div>
-         <fa-icon class="fal fa-envelope" color="#2980B9" size="2em"></fa-icon>
+         <fa-icon class="fas fa-address-card" color="#2980B9" size="2em"></fa-icon>
       </div>
     `;
   }
