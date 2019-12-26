@@ -1,15 +1,14 @@
-import { LitElement, html, css } from 'lit-element';
+import { LitElement, html, css } from "lit-element";
 
 class FaIcon extends LitElement {
-
   static get properties() {
     return {
       color: String,
-      iClass: { attribute: 'class' },
+      iClass: { attribute: "class" },
       src: String,
       style: String,
       size: String,
-      pathPrefix: { attribute: "path-prefix" },
+      pathPrefix: { attribute: "path-prefix" }
     };
   }
   static get styles() {
@@ -24,18 +23,18 @@ class FaIcon extends LitElement {
 
   getSources(className) {
     const PREFIX_TO_STYLE = {
-      fas: 'solid',
-      far: 'regular',
-      fal: 'light',
-      fab: 'brands',
-      fa: 'solid'
+      fas: "solid",
+      far: "regular",
+      fal: "light",
+      fab: "brands",
+      fa: "solid"
     };
     const getPrefix = iClass => {
-      let data = iClass.split(' ');
+      let data = iClass.split(" ");
       return [PREFIX_TO_STYLE[data[0]], normalizeIconName(data[1])];
     };
     const normalizeIconName = name => {
-      let icon = name.replace('fa-', '');
+      let icon = name.replace("fa-", "");
       return icon;
     };
     let data = getPrefix(className);
@@ -43,11 +42,11 @@ class FaIcon extends LitElement {
   }
   constructor() {
     super();
-    this.iClass = '';
-    this.src = '';
-    this.style = '';
-    this.size = '19';
-    this.color = '#000';
+    this.iClass = "";
+    this.src = "";
+    this.style = "";
+    this.size = "19";
+    this.color = "#000";
     this.pathPrefix = "node_modules";
   }
   firstUpdated() {
@@ -55,7 +54,7 @@ class FaIcon extends LitElement {
   }
   render() {
     return html`
-      <div class="fa-icon">
+      <div class="fa-icon ${this.iClass}">
         <svg
           style=" width:${this.size};  height: ${this.size}; fill: ${this
             .color}; ${this.style}"
@@ -66,4 +65,4 @@ class FaIcon extends LitElement {
     `;
   }
 }
-customElements.define('fa-icon', FaIcon);
+customElements.define("fa-icon", FaIcon);
