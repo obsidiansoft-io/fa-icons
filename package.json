@@ -1,6 +1,6 @@
 {
   "name": "fa-icons",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "FontAwsome icons for polymer 3",
   "main": "index.js",
   "scripts": {
