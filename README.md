@@ -69,3 +69,24 @@ Development of the fa-icons is currently sponsored by [ObsidianSoft](https://obs
 This readme is available in the following translations:
 
 - [Spanish :es:](translations/README.spanish.md) (:pray: [@obsidiansoft-io](https://github.com/obsidiansoft-io))
+
+## Testing element
+
+To correctly test the element individually, you require:
+
+* Polymer-CLI
+* Google Chrome
+
+To test, simply run:
+
+```
+$ npm run test
+```
+
+Or:
+
+```
+$ polymer serve
+```
+
+And navigate to the `/test/` URL path in your web browser.

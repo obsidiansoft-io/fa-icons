@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>fa-icon test</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../node_modules/@polymer/test-fixture/test-fixture.js"></script>
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script src="../node_modules/wct-mocha/wct-mocha.js"></script>
+
+    <script type="module" src="../fa-icon.js"></script>
+  </head>
+  <body>
+
+    <test-fixture id="BasicTestFixture">
+      <template>
+        <fa-icon></fa-icon>
+      </template>
+    </test-fixture>
+
+    <test-fixture id="AllPropertiesCalled">
+      <template>
+        <fa-icon color="#FFF" size="30" class="fab" style="width: 1rem; height: 1rem;"></fa-icon>
+      </template>
+    </test-fixture>
+
+    <script type="module">
+      suite('When element is called without attributes', () => {
+        const element = fixture('BasicTestFixture');
+        
+        test('element default properties should be empty string', () => {
+          assert.equal(element.iClass, '');
+          assert.equal(element.src, '');
+          assert.equal(element.style, '');
+        });
+
+        test('element default size should be 19', () => {
+          assert.equal(element.size, '19');
+        });
+
+        test('element default color is #000', () => {
+          assert.equal(element.color, '#000');
+        });
+
+        test('element default path prefix is node_modules', () => {
+          assert.equal(element.pathPrefix, 'node_modules');
+        });
+
+      });
+
+      suite('When element is called with all attributes', () => {
+        const element = fixture('AllPropertiesCalled');
+
+        test('calling element with all attributes', () => {
+          assert.equal(element.color, '#FFF');
+          assert.equal(element.size, '30');
+          assert.equal(element.iClass, 'fab');
+          assert.equal(element.style, 'width: 1rem; height: 1rem;');
+        });
+
+      });
+
+      suite('Component methods', () => {
+        const element = fixture('BasicTestFixture');
+
+          test('getSources method obtain source by class provided', () => {
+            const result = element.getSources('fab linkedin');
+            assert.equal(result, 'node_modules/@fortawesome/fontawesome-free/sprites/brands.svg#linkedin');
+          });
+
+          test('firstUpdated method sets source based on class provided', () => {
+            element.iClass = 'fab linkedin';
+            element.firstUpdated();
+            assert.equal(element.src, 'node_modules/@fortawesome/fontawesome-free/sprites/brands.svg#linkedin');
+          });
+
+      });
+    </script>
+
+  </body>
+</html>
