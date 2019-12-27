@@ -70,6 +70,18 @@ This readme is available in the following translations:
 
 - [Spanish :es:](translations/README.spanish.md) (:pray: [@obsidiansoft-io](https://github.com/obsidiansoft-io))
 
+## Preview element
+
+To visualize the element demo, simply run:
+
+```
+$ polymer serve
+```
+
+And navigate to `/demo/` in the URL that the Polymer CLI indicates. Usually, it is `127.0.0.1:8081`.
+
+E.g.: `127.0.0.1:8081/demo`
+
 ## Testing element
 
 To correctly test the element individually, you require:
