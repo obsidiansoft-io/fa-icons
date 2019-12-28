@@ -69,3 +69,36 @@ El desarrollo del icono de fa-icons está patrocinado por [ObsidianSoft](https:/
 Este readme está disponible en las siguientes traducciones:
 
 - [Ingles :us:](README.md) (:pray: [@obsidiansoft-io](https://github.com/obsidiansoft-io))
+
+## Previsualizar el elemento
+
+Para ver una pequeña demostración, basta con ejecutar:
+
+```
+$ polymer serve
+```
+
+E ir a la ruta `/demo/` de la URL que indica Polymer CLI. Comunmente es: `127.0.0.1:8081`.
+
+Ejemplo: `127.0.0.1:8081/demo`
+
+## Tests unitarios
+
+Para correr los test unitarios, se requiere tener instalado:
+
+* Polymer-CLI
+* Google Chrome
+
+Para ejecutar los test, basta correr:
+
+```
+$ npm run test
+```
+
+Ó:
+
+```
+$ polymer serve
+```
+
+Y navegar hacia la ruta `/test/` en el navegador del componente servido.
