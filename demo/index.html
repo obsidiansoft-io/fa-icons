@@ -24,9 +24,41 @@
       <h3>fa-icon demo</h3>
       <demo-snippet>
         <template>
-          <fa-icon path-prefix="../node_modules" class="fab fa-google" size="24"></fa-icon>
-          <fa-icon path-prefix="../node_modules" class="fab fa-twitch" size="24"></fa-icon>
-          <fa-icon path-prefix="../node_modules" class="fab fa-linkedin" size="24"></fa-icon>
+          <fa-icon path-prefix="../node_modules" color="#4285F4" class="fab fa-google" size="24"></fa-icon>
+          <fa-icon path-prefix="../node_modules" color="#8c45f7" class="fab fa-twitch" size="24"></fa-icon>
+          <fa-icon path-prefix="../node_modules" color="#0077b5" class="fab fa-linkedin" size="24"></fa-icon>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered">
+      <h3>Styling trough CSS</h3>
+      <demo-snippet>
+        <template>
+          <fa-icon id="GoogleIcon" path-prefix="../node_modules" class="fab fa-google"></fa-icon>
+          <fa-icon id="TwitchIcon" path-prefix="../node_modules" class="fab fa-twitch"></fa-icon>
+          <fa-icon id="LinkedinIcon" path-prefix="../node_modules" class="fab fa-linkedin"></fa-icon>
+          <style>
+            #GoogleIcon {
+              /*
+              * Using color property
+              */
+              color: #4285F4;
+            }
+            #TwitchIcon {
+              /*
+              * Using custom properties to pass the color to the element
+              */
+              --fa-icon-fill-color: #8c45f7;
+            }
+            #LinkedinIcon {
+              /*
+              * Changing width and height trough custom properties
+              */
+              --fa-icon-width: 3rem;
+              --fa-icon-height: 3rem;
+              color: #0077b5;
+            }
+          </style>
         </template>
       </demo-snippet>
     </div>

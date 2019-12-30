@@ -18,6 +18,11 @@ class FaIcon extends LitElement {
         padding: 0;
         margin: 0;
       }
+      :host svg {
+        fill: var(--fa-icon-fill-color, currentcolor);
+        width: var(--fa-icon-width, 19px);
+        height: var(--fa-icon-height, 19px);
+      }
     `;
   }
 
@@ -45,23 +50,29 @@ class FaIcon extends LitElement {
     this.iClass = "";
     this.src = "";
     this.style = "";
-    this.size = "19";
-    this.color = "#000";
+    this.size = "";
+    this.color = "";
     this.pathPrefix = "node_modules";
   }
   firstUpdated() {
     this.src = this.getSources(this.iClass);
   }
+  _parseStyles() {
+    return `
+      ${this.size ? `width: ${this.size};` : ''}
+      ${this.size ? `height: ${this.size};` : ''}
+      ${this.color ? `fill: ${this.color};` : ''}
+      ${this.style}
+    `;
+  }
   render() {
     return html`
-      <div class="fa-icon ${this.iClass}">
-        <svg
-          style=" width:${this.size};  height: ${this.size}; fill: ${this
-            .color}; ${this.style}"
-        >
-          <use href="${this.src}"></use>
-        </svg>
-      </div>
+      <svg 
+        .style="${this._parseStyles()}">
+        <use 
+          href="${this.src}">
+        </use>
+      </svg>
     `;
   }
 }
