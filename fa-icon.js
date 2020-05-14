@@ -54,9 +54,6 @@ class FaIcon extends LitElement {
     this.color = "";
     this.pathPrefix = "node_modules";
   }
-  firstUpdated() {
-    this.src = this.getSources(this.iClass);
-  }
   _parseStyles() {
     return `
       ${this.size ? `width: ${this.size};` : ''}
@@ -66,6 +63,7 @@ class FaIcon extends LitElement {
     `;
   }
   render() {
+    this.src = this.getSources(this.iClass);
     return html`
       <svg 
         .style="${this._parseStyles()}">
